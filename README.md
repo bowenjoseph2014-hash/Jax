@@ -2,6 +2,12 @@
 
 A modern, responsive website for buying and selling used items including gaming consoles, electronics, furniture, and books.
 
+## 🌐 Live Website
+
+**View the website:** [https://github.com/bowenjoseph2014-hash/Jax](https://github.com/bowenjoseph2014-hash/Jax)
+
+Or download and open `index.html` directly in your browser to get started!
+
 ## Features
 
 - **Multiple Categories**: Gaming, Electronics, Furniture, and Books
