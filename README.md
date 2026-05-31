@@ -4,7 +4,7 @@ A modern, responsive website for buying and selling used items including gaming 
 
 ## 🌐 Live Website
 
-**View the website:** [https://github.com/bowenjoseph2014-hash/Jax](https://github.com/bowenjoseph2014-hash/Jax)
+**View the website:** [https://rawcdn.githack.com/bowenjoseph2014-hash/Jax/main/index.html](https://rawcdn.githack.com/bowenjoseph2014-hash/Jax/main/index.html)
 
 Or download and open `index.html` directly in your browser to get started!
 
