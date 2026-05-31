@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jax Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 16px 24px;
+      background: #020617;
+      border-bottom: 1px solid #1f2937;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    header span {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    main {
+      max-width: 1000px;
+      margin: 24px auto 40px;
+      padding: 0 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 10px;
+      border: 1px solid #1f2937;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .thumb {
+      background: linear-gradient(135deg, #22c55e, #0ea5e9);
+      border-radius: 8px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: #020617;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .desc {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 15px;
+      color: #22c55e;
+    }
+    .tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      color: #9ca3af;
+    }
+    button {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: none;
+      background: #22c55e;
+      color: #020617;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.05s;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+    button:active {
+      transform: scale(0.97);
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #6b7280;
+      padding-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jax Store</h1>
+    <span>Simple items • Static demo</span>
+  </header>
+
+  <main>
+    <h2 style="font-size:18px; margin-bottom:12px;">Featured items</h2>
+    <div class="grid">
+      <!-- Item 1 -->
+      <div class="card">
+        <div class="thumb">J1</div>
+        <div class="title">Jax Premium Script Pack</div>
+        <div class="desc">
+          Optimized scripts for smooth movement, clean UI, and better performance in your projects.
+        </div>
+        <div class="price-row">
+          <span class="price">$7.99</span>
+          <span class="tag">Digital • Instant</span>
+        </div>
+        <button onclick="fakeBuy('Jax Premium Script Pack')">Add to cart</button>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="card">
+        <div class="thumb">TX</div>
+        <div class="title">Texture Pack: Neon Grid</div>
+        <div class="desc">
+          High‑contrast neon grid textures, perfect for menus, arenas, and sci‑fi maps.
+        </div>
+        <div class="price-row">
+          <span class="price">$4.49</span>
+          <span class="tag">Textures</span>
+        </div>
+        <button onclick="fakeBuy('Texture Pack: Neon Grid')">Add to cart</button>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="card">
+        <div class="thumb">UI</div>
+        <div class="title">HUD & UI Starter Kit</div>
+        <div class="desc">
+          Clean health bars, ammo counters, and notification popups ready to plug into your game.
+        </div>
+        <div class="price-row">
+          <span class="price">$5.99</span>
+          <span class="tag">UI Kit</span>
+        </div>
+        <button onclick="fakeBuy('HUD & UI Starter Kit')">Add to cart</button>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="card">
+        <div class="thumb">FX</div>
+        <div class="title">Impact & Hit FX Pack</div>
+        <div class="desc">
+          Snappy hit markers, screen shake presets, and impact flashes for FPS‑style feedback.
+        </div>
+        <div class="price-row">
+          <span class="price">$6.49</span>
+          <span class="tag">VFX</span>
+        </div>
+        <button onclick="fakeBuy('Impact & Hit FX Pack')">Add to cart</button>
+      </div>
+    </div>
+
+    <p id="cart-msg" style="margin-top:20px; font-size:13px; color:#a5b4fc;"></p>
+  </main>
+
+  <footer>
+    This is a demo shop page. Hook buttons to real payments later.
+  </footer>
+
+  <script>
+    function fakeBuy(item) {
+      const msg = document.getElementById('cart-msg');
+      msg.textContent = 'Added "' + item + '" to cart (demo only, no real checkout yet).';
+    }
+  </script>
+</body>
+</html>
